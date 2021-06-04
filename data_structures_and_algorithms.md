@@ -72,7 +72,9 @@ class Node:
         self.edges = [] # outgoing edges
 ```
 
-## 4. Graph
+## 4. Heap
+
+### 4.1 Constructing Min Heap
 
 ```
 import sys
@@ -180,6 +182,8 @@ Many problems can be efficiently solved using Heaps.
 * Merge K Sorted Arrays
 
 ---
+
+# Sorting Algorithms
 
 ## 1.Insertion Sort
 
