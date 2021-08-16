@@ -6,6 +6,8 @@
 2. Trees
     1. Constructing Binary Tree
     2. Searching Binary Tree
+    3. Tree Walk
+    4. Depth First Tree Walk
 3. Graphs
     1. Constructing Graphs
 4. Heap
@@ -49,6 +51,14 @@ def add(p:TreeNode, x:object):
     return p
 ```
 
+```
+root = TreeNode(1) 
+root.left = TreeNode(2) 
+root.right = TreeNode(3) 
+root.left.left = TreeNode(4) 
+root.left.right = TreeNode(5)
+```
+
 ### 2.2 Searching Binary Tree
 
 ```
@@ -60,6 +70,29 @@ def search(p:TreeNode, x:object):
         return search(p.right, x) 
     return p
 ```
+
+### 2.3 Tree Walk
+
+```
+def walk(p:TreeNode):
+    if p is None: return 
+    print(p.value) # preorder 
+    walk(p.left) 
+    walk(p.right)
+```
+
+### 2.4 Depth First Tree Walk
+```
+def search(p:TreeNode, x:object): 
+    if p is None: return None
+    if x==p.value: return p
+    q = search(p.left, x)
+    if q is not None: return q
+    q = search(p.right, x)
+    
+    return q
+```
+
 
 ## 3. Graph
 
