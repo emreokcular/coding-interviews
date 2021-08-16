@@ -30,13 +30,14 @@ l = [[-1,-1,2],[-1,0,1],[-1,0,1]]
 ## Q : How to find the longest list in a list?
 
 ## A : 
+
 ```python
 max(values, key=len)
 ```
 
 ## Q : How to reverse a string?
 
-## A :
+## A :
 
 ```python
 mystring[::-1]
@@ -44,7 +45,8 @@ mystring[::-1]
 
 ## Q : What is throwaway variable ?
 
-## A : 
+## A :
+
 ```python
 for _ in range(10):
     print("foo")
