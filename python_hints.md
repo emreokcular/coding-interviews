@@ -69,4 +69,11 @@ a,b = b,a
 billion = 1_000_000_000
 ```
 
+## Q : list in reverse order with range
 
+## A : 
+
+```python
+list(reversed(range(10)))
+range(10, -1, -1)
+```
