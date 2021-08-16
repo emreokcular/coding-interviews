@@ -20,9 +20,9 @@ l = [[-1,-1,2],[-1,0,1],[-1,0,1]]
 [list(i) for i in set(tuple(i) for i in l)]
 ```
 
-## Q : Diff between `range()` and `xrange()`
+## Q : Diff between `range()` and `xrange()`
 
-## A :  
+## A :
 
 * `range()` – This returns a range object (a type of iterable). 
 * `xrange()` – This function returns the generator object that can be used to display numbers only by looping. The only particular range is displayed on demand and hence called “lazy evaluation“.
