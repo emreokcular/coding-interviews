@@ -6,15 +6,16 @@ This file contains pythonic hints and tricks that I learned during my Python jou
 
 Both `sort()` and `sorted()` can be used to sort a list. What is the difference between them and when would I want to use one versus the other?
 
-## A : The primary difference between the list `sort()` function and the s`orted()` function is that the `sort()` function will modify the list it is called on. 
+## A : The primary difference between the list `sort()` function and the `sorted()` function is that the `sort()` function will modify the list it is called on. 
 
-## Q : Unique elements in list of lists
+## Q : Unique elements in list of lists
 
 ```python
 l = [[-1,-1,2],[-1,0,1],[-1,0,1]]
 ```
 
-## A : 
+## A :
+
 ```python
 [list(i) for i in set(tuple(i) for i in l)]
 ```
@@ -22,6 +23,7 @@ l = [[-1,-1,2],[-1,0,1],[-1,0,1]]
 ## Q : Diff between `range()` and `xrange()`
 
 ## A :  
+
 * `range()` – This returns a range object (a type of iterable). 
 * `xrange()` – This function returns the generator object that can be used to display numbers only by looping. The only particular range is displayed on demand and hence called “lazy evaluation“.
 
