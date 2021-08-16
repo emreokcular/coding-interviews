@@ -53,6 +53,7 @@ for _ in range(10):
 ## Q : How to swap variables ?
 
 ## A : 
+
 ```python
 a,b = 1,2
 a,b = b,a
