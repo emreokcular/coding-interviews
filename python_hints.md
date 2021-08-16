@@ -34,10 +34,10 @@ l = [[-1,-1,2],[-1,0,1],[-1,0,1]]
 max(values, key=len)
 ```
 
+## Q : How to reverse a string?
 
-## Q : How to reverse a string?
+## A :
 
-## A : 
 ```python
 mystring[::-1]
 ```
